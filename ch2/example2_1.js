@@ -1,6 +1,7 @@
 var canvas = document.getElementById('canvas'),
     context = canvas.getContext('2d');
 
+context.lineJoin = 'round';
 context.lineWidth = 30;
 
 context.font = '24px Helvetica';
