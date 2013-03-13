@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cutouts with the nonzero winding rule</title>
+    <style>
+        body {
+            background: #efefef;
+        }
+
+        #canvas {
+            -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        }
+        .floatingControls {
+            position: absolute;
+            left: 475px;
+            top: 20px;
+        }
+
+        #canvas {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class='floatingControls'>
+        <input id='directionCheckbox' type='checkbox' />Same direction<br />
+        <input id='annotationCheckbox' type='checkbox' />Annotations<br />
+    </div>
+
+    <canvas id='canvas' width='600' height='400'>
+    Canvas not supported
+    </canvas>
+<script src='example2_10.js'></script>
+</body>
+</html>
