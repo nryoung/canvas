@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drawing Circles with Rubber Bands</title>
+    <style>
+        body {
+            background: #eeeeee;
+        }
+        #controls {
+            position: absolute;
+            left: 25px;
+            top: 25px;
+        }
+        #canvas {
+            background: #ffffff;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-top: 10px;
+            -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <canvas id='canvas' width='1000' height='550'>
+    Canvas not supported
+    </canvas>
+
+    <div id='controls'>
+        Stroke color: <select id='strokeStyleSelect'>
+                        <option value='red'>red</option>
+                        <option value='green'>green</option>
+                        <option value='blue'>blue</option>
+                        <option value='orange'>orange</option>
+                        <option value='cornflowerblue'>cornflowerblue</option>
+                        <option value='goldenrod'>goldenrod</option>
+                        <option value='navy' selected>navy</navy>
+                        <option value='purple'>purple</option>
+                       </select>
+        Fill color: <select id='fillStyleSelect'>
+                        <option value='rgba(255,0,0,0.5)'>semi-transparent red</option>
+                        <option value='green'>green</option>
+                        <option value='rgba(0,0,255,0.5)'>semi-transparent blue</option>
+                        <option value='orange'>orange</option>
+                        <option value='rgba(100,140,230,0.5)'>semi-transparent corflowerblue</option>
+                        <option value='goldenrod' selected>goldenrod</option>
+                        <option value='navy'>navy</option>
+                        <option value='purple'>purple</option>
+                    </select>
+        Line width: <select id='lineWidthSelect'>
+                        <option value='1.0'>1.0</option>
+                        <option value='2.0'>2.0</option>
+                        <option value='3.0'>3.0</option>
+                        <option value='4.0'>4.0</option>
+                        <option value='5.0'>5.0</option>
+                        <option value='6.0'>6.0</option>
+                    </select>
+
+        Fill <input id='fillCheckbox' type='checkbox' checked />
+
+        Guidewires: <input id='guidewireCheckbox' type='checkbox' checked />
+
+        <input id='eraseAllButton' type='button' value='Erase all' />
+    </div>
+<script src='example2_19.js'></script>
+</body>
+</html>
