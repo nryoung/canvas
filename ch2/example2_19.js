@@ -187,7 +187,7 @@ fillStyleSelect.onchange = function (e) {
 
 lineWidthSelect.onchange = function (e) {
     context.lineWidth = lineWidthSelect.value;
-}
+};
 
 guidewireCheckbox.onchange = function (e) {
     guidewires = guidewireCheckbox.checked;
