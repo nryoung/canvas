@@ -220,5 +220,3 @@ context.shadowOffsetY = 2;
 context.shadowBlur = 4;
 
 drawGrid('lightgray', 10, 10);
-
-
